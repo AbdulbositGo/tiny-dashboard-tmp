@@ -1,0 +1,17 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  {% include "head.html" %}
+  <body class="vertical  light  ">
+    <div class="wrapper">
+        {% include "navbar.html" %}
+        {% include "sidebar-left.html" %}
+        {% block content %}
+        {% endblock content %}
+        {% include "notifications-shortcuts.html" %}
+    </div>
+    {% block scripts %}
+      {% include "scripts.html" %}
+    {% endblock scripts %}
+</body>
+</html>
